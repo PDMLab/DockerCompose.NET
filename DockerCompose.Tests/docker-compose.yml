@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  database:
+    image: library/postgres:latest
+    environment:
+      POSTGRES_PASSWORD: 'p455w02d'
+    ports:
+      - "5432:5432"
