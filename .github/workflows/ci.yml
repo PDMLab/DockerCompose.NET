@@ -29,4 +29,4 @@ jobs:
           dotnet build --configuration $config --no-restore
       - name: Test
         run: |
-          dotnet test
+          dotnet test -l "console;verbosity=detailed"
