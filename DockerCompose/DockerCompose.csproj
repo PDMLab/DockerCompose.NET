@@ -18,6 +18,10 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <Version>0.1.0</Version>
+    </PropertyGroup>
+
     <ItemGroup>
       <PackageReference Include="CliWrap" Version="3.4.4" />
     </ItemGroup>
