@@ -1,6 +1,6 @@
 # DockerCompose.NET
 
-This is a library to automate `docker-compose` 1.x using .NET.
+This is a library to automate `docker-compose` 2.x using .NET.
 
 ## Usage
 
