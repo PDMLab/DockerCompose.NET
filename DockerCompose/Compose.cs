@@ -35,11 +35,11 @@ public class Compose
     var stdOutBuffer = new StringBuilder();
     var stdErrBuffer = new StringBuilder();
 
-    var result = await Cli.Wrap("docker-compose")
+    var result = await Cli.Wrap("docker")
       .WithWorkingDirectory(directory.ToString())
       .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
       .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
-      .WithArguments("up -d")
+      .WithArguments("compose up -d")
       .ExecuteBufferedAsync();
 
     var stdOut = stdOutBuffer.ToString();
@@ -56,11 +56,11 @@ public class Compose
     var stdOutBuffer = new StringBuilder();
     var stdErrBuffer = new StringBuilder();
 
-    var result = await Cli.Wrap("docker-compose")
+    var result = await Cli.Wrap("docker")
       .WithWorkingDirectory(directory.ToString())
       .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
       .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
-      .WithArguments("stop")
+      .WithArguments("compose stop")
       .ExecuteBufferedAsync();
 
     var stdOut = stdOutBuffer.ToString();
@@ -76,11 +76,11 @@ public class Compose
     var stdOutBuffer = new StringBuilder();
     var stdErrBuffer = new StringBuilder();
 
-    var result = await Cli.Wrap("docker-compose")
+    var result = await Cli.Wrap("docker")
       .WithWorkingDirectory(directory.ToString())
       .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
       .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
-      .WithArguments("down")
+      .WithArguments("compose down")
       .ExecuteBufferedAsync();
 
     var stdOut = stdOutBuffer.ToString();
