@@ -7,7 +7,7 @@
         <PackageVersion>0.1.0</PackageVersion>
         <Title>DockerCompose</Title>
         <Authors>Alexander Zeitler</Authors>
-        <Description>docker-compose automation for .NET</Description>
+        <Description>Docker Compose v2 automation for .NET</Description>
         <Copyright>Alexander Zeitler</Copyright>
         <PackageProjectUrl>https://github.com/PDMLab/DockerCompose.NET</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/PDMLab/DockerCompose.NET/blob/main/LICENSE</PackageLicenseUrl>
