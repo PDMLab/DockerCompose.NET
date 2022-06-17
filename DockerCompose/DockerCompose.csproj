@@ -4,7 +4,6 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>0.1.0</PackageVersion>
         <Title>DockerCompose</Title>
         <Authors>Alexander Zeitler</Authors>
         <Description>Docker Compose v2 automation for .NET</Description>
@@ -12,8 +11,6 @@
         <PackageProjectUrl>https://github.com/PDMLab/DockerCompose.NET</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/PDMLab/DockerCompose.NET/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/PDMLab/DockerCompose.NET</RepositoryUrl>
-        <AssemblyVersion>0.1.0</AssemblyVersion>
-        <FileVersion>0.1.0</FileVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
@@ -23,11 +20,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CliWrap" Version="3.4.4" />
+        <PackageReference Include="CliWrap" Version="3.4.4" />
     </ItemGroup>
-
+    
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="\" />
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
     </ItemGroup>
 
 </Project>
