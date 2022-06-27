@@ -10,6 +10,7 @@
         <Copyright>Alexander Zeitler</Copyright>
         <PackageProjectUrl>https://github.com/PDMLab/DockerCompose.NET</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/PDMLab/DockerCompose.NET/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageTags>Containers;Docker-Compose;Docker Compose;Linux;Windows;Mac;NET Core;DevOps;Testing;Tests</PackageTags>
         <RepositoryUrl>https://github.com/PDMLab/DockerCompose.NET</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
